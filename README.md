@@ -19,7 +19,8 @@ The project uses the following datasets:
 - `calendar.csv`
 - `sales_train_validation.csv`
 - `sell_prices.csv`
-- `https://www.kaggle.com/competitions/m5-forecasting-accuracy/data`
+
+https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 
 ## 🔄 Current Progress
 ✔️ Imported the required Python libraries.
