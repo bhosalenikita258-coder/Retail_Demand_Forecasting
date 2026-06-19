@@ -1,39 +1,57 @@
-# 🛍️ Retail Demand Forecasting
+# Retail Demand Forecasting
 
-## 📖 Project Overview
-This project aims to forecast retail product demand using historical sales data. Currently, the project focuses on setting up the development environment by importing the required libraries and loading the datasets for further analysis.
+## Project Overview
+Retail Demand Forecasting is a data analytics project that aims to analyze historical retail sales data to understand demand patterns and prepare the data for future forecasting models. This notebook currently focuses on importing the required libraries, loading the datasets, and performing an initial exploration of the data.
 
+---
 
-## 🎯 Objectives
+##  Objectives
 - Import the required Python libraries.
-- Load the retail datasets successfully.
-- Prepare the project for data preprocessing and analysis.
+- Load the retail datasets.
+- Examine the structure of the datasets.
+- Understand dataset dimensions and data types.
+- Prepare the data for further preprocessing and analysis.
 
-## 🛠️ Tech Stack
+---
+
+##  Tech Stack
 - **Programming Language:** Python
 - **Libraries:** Pandas, NumPy, Matplotlib
 - **Environment:** Jupyter Notebook
 
-## 📂 Dataset
+---
+
+##  Dataset
 The project uses the following datasets:
 - `calendar.csv`
 - `sales_train_validation.csv`
 - `sell_prices.csv`
 
 https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
+---
 
-## 🔄 Current Progress
-✔️ Imported the required Python libraries.
+##  Current Progress
 
-✔️ Loaded the retail datasets successfully.
+###  Step 1: Import Required Libraries
+Imported essential Python libraries for data analysis and visualization.
 
-⏳ Data preprocessing and analysis will be completed in the next stages.
+###  Step 2: Load the Dataset
+Successfully loaded all retail datasets into Pandas DataFrames.
 
-## 📁 Project Structure
+###  Step 3: Initial Data Exploration
+- Displayed the first few rows using `head()`.
+- Checked the shape of each dataset.
+- Viewed dataset information using `info()`.
 
+---
+
+##  Project Structure
+
+```
 Retail_Demand_Forecasting/
 │── Retail_Demand_Forecasting.ipynb
 │── calendar.csv
 │── sales_train_validation.csv
 │── sell_prices.csv
 └── README.md
+```
