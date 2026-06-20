@@ -1,7 +1,7 @@
 # Retail Demand Forecasting
 
 ## Project Overview
-Retail Demand Forecasting is a data analytics project that aims to analyze historical retail sales data to understand demand patterns and prepare the data for future forecasting models. This notebook currently focuses on importing the required libraries, loading the datasets, and performing an initial exploration of the data.
+Retail Demand Forecasting is a data analytics project that aims to analyze historical retail sales data to understand demand patterns and prepare the data for future forecasting models. This notebook currently focuses on importing the required libraries, loading the datasets, and performing an initial exploration of the data.Visualized data to understand easily.
 
 ---
 
@@ -44,7 +44,9 @@ Successfully loaded all retail datasets into Pandas DataFrames.
 - Viewed dataset information using `info()`.
 
 ---
-
+### Data Visualization
+- Monthly Distribution
+- Weekday Distribution
 ##  Project Structure
 
 ```
