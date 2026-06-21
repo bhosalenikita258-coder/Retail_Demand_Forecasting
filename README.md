@@ -47,6 +47,9 @@ Successfully loaded all retail datasets into Pandas DataFrames.
 ### Data Visualization
 - Monthly Distribution
 - Weekday Distribution
+- Event Type
+- Price Distribution
+  
 ##  Project Structure
 
 ```
