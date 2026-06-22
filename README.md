@@ -49,6 +49,10 @@ Successfully loaded all retail datasets into Pandas DataFrames.
 - Weekday Distribution
 - Event Type
 - Price Distribution
+
+  -Highest Price
+
+  -Lowest Price
   
 ##  Project Structure
 
