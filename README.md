@@ -1,66 +1,109 @@
 # Retail Demand Forecasting
 
 ## Project Overview
-Retail Demand Forecasting is a data analytics project that aims to analyze historical retail sales data to understand demand patterns and prepare the data for future forecasting models. This notebook currently focuses on importing the required libraries, loading the datasets, and performing an initial exploration of the data.Visualized data to understand easily.
 
----
+Retail Demand Forecasting is a data analysis project that explores historical retail sales data to understand sales patterns, product demand, pricing trends, and calendar-based events. The project performs Exploratory Data Analysis (EDA) to identify insights that can support future demand forecasting.
 
-##  Objectives
-- Import the required Python libraries.
-- Load the retail datasets.
-- Examine the structure of the datasets.
-- Understand dataset dimensions and data types.
-- Prepare the data for further preprocessing and analysis.
+## Objectives
 
----
+Load and analyze retail sales datasets.
+Perform data cleaning and preprocessing.
+Explore dataset structure and statistics.
+Identify missing and duplicate values.
+Analyze demand patterns using visualizations.
+Prepare the dataset for future forecasting models.
 
-##  Tech Stack
-- **Programming Language:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib
-- **Environment:** Jupyter Notebook
 
----
+## Dataset
 
-##  Dataset
-The project uses the following datasets:
-- `calendar.csv`
-- `sales_train_validation.csv`
-- `sell_prices.csv`
+The project uses three datasets:
+
+  - calendar.csv – Calendar dates and event information.
+
+  - sales_train_validation.csv – Historical sales data.
+
+  - sell_prices.csv – Product selling prices.
 
 https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 ---
 
-##  Current Progress
+## Technologies Used
 
-###  Step 1: Import Required Libraries
-Imported essential Python libraries for data analysis and visualization.
+   - Python
+ 
+   - Pandas
 
-###  Step 2: Load the Dataset
-Successfully loaded all retail datasets into Pandas DataFrames.
+   - NumPy
 
-###  Step 3: Initial Data Exploration
-- Displayed the first few rows using `head()`.
-- Checked the shape of each dataset.
-- Viewed dataset information using `info()`.
+   - Matplotlib
 
----
-### Data Visualization
-- Monthly Distribution
-- Weekday Distribution
-- Event Type
-- Price Distribution
+## Exploratory Data Analysis
 
-  -Highest Price
+   - The following analyses were performed:
 
-  -Lowest Price
+        - Dataset loading
+
+        - Dataset shape and information
+
+        - Missing value analysis
+          
+        -  Duplicate value checking
+          
+        -  Statistical summary
+          
+        -  Date conversion
+
+        -  Monthly sales distribution
+          
+        -  Weekday distribution
+          
+        -  Event type distribution
+          
+        -  Product price distribution
+          
+        -  Highest and lowest selling prices
+          
+        -  Store-wise distribution
+          
+        -  Product category distribution
+
+## Key Insights
+
+   - Examined the structure and quality of retail datasets.
+
+   - Identified missing values and duplicates.
   
-##  Project Structure
+   - Visualized monthly and weekday demand trends.
 
-```
+   - Analyzed event-based sales distribution.
+
+   - Studied product pricing patterns.
+
+   - Compared store-wise and category-wise distributions.
+
+## Future Work
+  
+  - Feature Engineering
+
+  - Time Series Forecasting
+
+  - Machine Learning Models (XGBoost, Random Forest)
+
+  - Deep Learning (LSTM)
+
+  - Model Evaluation and Performance Comparison
+
+## Project Structure
+
 Retail_Demand_Forecasting/
-│── Retail_Demand_Forecasting.ipynb
-│── calendar.csv
-│── sales_train_validation.csv
-│── sell_prices.csv
+│
+
+├── Retail_Demand_Forecasting.ipynb
+
+├── calendar.csv
+
+├── sales_train_validation.csv
+
+├── sell_prices.csv
+
 └── README.md
-```
