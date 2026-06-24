@@ -6,23 +6,23 @@ Retail Demand Forecasting is a data analysis project that explores historical re
 
 ## Objectives
 
-Load and analyze retail sales datasets.
-Perform data cleaning and preprocessing.
-Explore dataset structure and statistics.
-Identify missing and duplicate values.
-Analyze demand patterns using visualizations.
-Prepare the dataset for future forecasting models.
+Load and analyze retail sales datasets
+Perform data cleaning and preprocessing
+Explore dataset structure and statisics
+Identify missing and duplicate values
+Analyze demand patterns using visualizations
+Prepare the dataset for future forecasting models
 
 
 ## Dataset
 
 The project uses three datasets:
 
-  - calendar.csv – Calendar dates and event information.
+  - calendar.csv – Calendar dates and event information
 
-  - sales_train_validation.csv – Historical sales data.
+  - sales_train_validation.csv – Historical sales data
 
-  - sell_prices.csv – Product selling prices.
+  - sell_prices.csv – Product selling prices
 
 https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 ---
@@ -52,9 +52,9 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
         -  Statistical summary
           
         -  Date conversion
-
+        
         -  Monthly sales distribution
-          
+        
         -  Weekday distribution
           
         -  Event type distribution
@@ -67,19 +67,27 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
           
         -  Product category distribution
 
+        - State-wise product distribution
+    
+        - Average selling price by store
+    
+        - Average selling price by state
+
 ## Key Insights
 
-   - Examined the structure and quality of retail datasets.
+   - Examined the structure and quality of retail datasets
 
-   - Identified missing values and duplicates.
+   - Identified missing values and duplicates
   
-   - Visualized monthly and weekday demand trends.
+   - Visualized monthly and weekday demand trends
 
-   - Analyzed event-based sales distribution.
+   - Analyzed event-based sales distribution
 
-   - Studied product pricing patterns.
+   - Studied product pricing patterns
 
-   - Compared store-wise and category-wise distributions.
+   - Compared store-wise and category-wise distributions
+
+   - Examined product distribution by category and state
 
 ## Future Work
   
