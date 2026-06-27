@@ -75,8 +75,15 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
     
         - Sample Daily Sales
     
-        - Top Selling Products 
+        - Top Selling Products
 
+## Data Transformation
+   
+   - Sales Data Transformation
+   
+   - Calendar Data Integration
+
+    
 ## Key Insights
 
    - Examined the structure and quality of retail datasets
@@ -119,52 +126,3 @@ Retail_Demand_Forecasting/
 ├── sell_prices.csv
 
 └── README.md
-# Week 2: Data Transformation
-
-## Objective
-
-The objective of Week 2 is to transform the raw M5 Forecasting dataset into clean, structured datasets suitable for demand forecasting models.
-
-## Tasks Completed
-
-### 1. Sales Data Transformation
-- Converted the sales dataset from wide format to long format using the `melt()` function.
-- Structured the data for easier analysis and forecasting.
-
-### 2. Calendar Data Integration
-- Merged the transformed sales dataset with the calendar dataset.
-- Added date-related features such as:
-  - Date
-  - Weekday
-  - Month
-  - Year
-  - Event information
-
-### 3. Price Data Integration
-- Merged sales data with the sell prices dataset.
-- Linked product prices using `store_id`, `item_id`, and `wm_yr_wk`.
-
-### 4. Data Cleaning
-- Checked for missing values after merging.
-- Filled missing selling prices using the median value.
-- Verified data consistency for further analysis.
-
-### 5. Data Aggregation
-- Aggregated daily sales into:
-  - Weekly sales
-  - Monthly sales
-- Prepared datasets for forecasting models.
-
-### 6. Output Files
-Generated:
-- `clean_analytical_dataset.csv`
-- `weekly_sales.csv`
-- `monthly_sales.csv`
-
-## Technologies Used
-
-- Python
-- Pandas
-- Jupyter Notebook
-
-
