@@ -132,3 +132,27 @@ Retail_Demand_Forecasting/
 ├── sell_prices.csv
 
 └── README.md
+
+## Feature Engineering
+
+Date-Based Feature Engineering
+
+To improve the predictive performance of the demand forecasting model, additional time-based features were extracted from the date column. These features enable the model to capture seasonal, monthly, weekly, and daily demand patterns.
+
+Features Created:
+
+Year: Extracted the year from the transaction date.
+
+Month: Extracted the month (1–12).
+
+Day: Extracted the day of the month.
+
+Week: Extracted the ISO week number of the year.
+
+Weekday: Extracted the day name (Monday–Sunday).
+
+Outcome
+
+Successfully generated temporal features from the date column.
+Enhanced the dataset with time-aware attributes for demand forecasting.
+Prepared the data for subsequent preprocessing, exploratory data analysis, and machine learning model development.
