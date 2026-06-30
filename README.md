@@ -89,7 +89,13 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 
    - Handling Missing Values
 
-    
+   - Create Features
+
+   - Revenue
+
+   - Weekly Sales
+
+
 ## Key Insights
 
    - Examined the structure and quality of retail datasets
