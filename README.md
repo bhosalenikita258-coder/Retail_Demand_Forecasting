@@ -161,4 +161,19 @@ Outcome
 
 Successfully generated temporal features from the date column.
 Enhanced the dataset with time-aware attributes for demand forecasting.
-Prepared the data for subsequent preprocessing, exploratory data analysis, and machine learning model development.
+Prepared the data for subsequent preprocessing, exploratory data analysis, and machine learning model development. 
+
+### Monthly Sales Aggregation
+
+To analyze sales trends over time, the dataset was grouped by **Year** and **Month** to calculate the total monthly sales.
+
+This aggregated dataset helps identify monthly sales patterns and serves as a foundation for further exploratory data analysis and forecasting.
+
+
+
+### Export Processed Dataset
+
+After preprocessing and feature engineering, the final dataset was exported for use in subsequent analysis and machine learning tasks.
+
+This saves the cleaned dataset as **`processed_data.csv`** while excluding the DataFrame index.
+
