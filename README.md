@@ -95,7 +95,14 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
 
    - Weekly Sales
 
+   - Monthly Sales
 
+## Time Series Forecasting
+
+   - Imported Important Libraries
+
+   - Creadted Daily Sales Dataset
+     
 ## Key Insights
 
    - Examined the structure and quality of retail datasets
