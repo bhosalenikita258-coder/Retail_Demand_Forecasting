@@ -102,24 +102,27 @@ https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
    - Imported Important Libraries
 
    - Creadted Daily Sales Dataset
+   
+   - Rename Columns for Prophet
+        - Prophet requires the input dataset to have two specific column names:
+        
+           - ds – Date column
+           - y – Target variable (Sales)
+        
+        - The existing dataset was modified by renaming:
+        
+          - date → ds
+           - sales → y
+        
+           This ensures compatibility with the Prophet forecasting model
+ 
+   - Create and Train the Prophet Model
 
- 1. Rename Columns for Prophet
+   - Forcasted Next 30 Days
 
- Prophet requires the input dataset to have two specific column names:
+   - Plotted Forecast
 
- ds – Date column
- y – Target variable (Sales)
-
- The existing dataset was modified by renaming:
-
- date → ds
- sales → y
-
- This ensures compatibility with the Prophet forecasting model.
-
- 2. Create and Train the Prophet Model
-
- A Prophet model was initialized using the default configuration and trained on the prepared dataset. During training, the model learns historical sales            patterns, trends, and seasonality, which will be used to generate future sales forecasts in the subsequent steps.
+     -Sales vs Sales Demand
      
 ## Key Insights
 
