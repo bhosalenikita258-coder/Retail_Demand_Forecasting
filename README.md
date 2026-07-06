@@ -158,6 +158,8 @@ The following forecast columns were analyzed:
 
 The last 30 forecasted records were displayed to review the model's predicted sales along with the associated confidence intervals. These values provide insights into both the expected future sales and the uncertainty surrounding each prediction.
 
+* Saved Prophet forecast results to sales_forecast.csv
+
 **Outcome:**
 
 * Successfully visualized the forecast components.
