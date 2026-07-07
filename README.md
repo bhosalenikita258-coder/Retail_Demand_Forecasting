@@ -248,3 +248,16 @@ After preprocessing and feature engineering, the final dataset was exported for 
 
 This saves the cleaned dataset as **`processed_data.csv`** while excluding the DataFrame index.
 
+
+### Prophet Forecasting and Project Documentation
+
+Steps Performed:
+
+Renamed the dataset columns to ds and y for Prophet model compatibility.
+Created and trained the Prophet forecasting model.
+Generated future sales forecasts using the trained model.
+Visualized the forecast results.
+Plotted and analyzed forecast components (Trend, Weekly Seasonality, and Yearly Seasonality).
+Interpreted the forecasting results and future demand predictions.
+
+
