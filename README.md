@@ -56,6 +56,16 @@ Comprehensive inspections conducted within the notebook include:
 ### 4. Interactive Application (`app.py`)
 A user-facing application built to serve interactive forecast visualizations, check confidence intervals (`yhat_lower` / `yhat_upper`), and allow quick assessments of predicted demand spikes.
 
+- Display of forecast data in tabular format.
+- Interactive 30-day sales forecast visualization.
+- Forecast confidence intervals (`yhat`, `yhat_lower`, and `yhat_upper`).
+- Sales Summary section displaying:
+  - Total Forecasted Sales
+  - Average Predicted Sales
+  - Maximum Predicted Sales
+  - Minimum Predicted Sales
+- Informational summary explaining the overall forecasted demand trend.
+
 ---
 
 ## 📂 Repository Structure
@@ -84,3 +94,5 @@ Launch the interactive dashboard to see predictions locally:
 ```bash
 streamlit run app.py
 ```
+
+
