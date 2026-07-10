@@ -35,24 +35,45 @@ st.pyplot(fig)
 st.caption(
     "Figure 1: 30-Day sales forecast generated using the Prophet model. "
     "X-axis: Date | Y-axis: Predicted Sales (Units Sold)"
-) 
+)
+
 st.subheader("Sales Summary")
 
 ##Calculate summary statistics 
 total_sales = forecast['yhat'].sum()
 average_sales = forecast['yhat'].mean()
 max_sales = forecast['yhat'].max()
-min_sales = forecast['yhat'].min() 
+min_sales = forecast['yhat'].min()
 
 ##Display statistics 
 st.write(f"**Total Forecasted Sales:** {total_sales:.2f}")
 st.write(f"**Average Predicted Sales:** {average_sales:.2f}")
 st.write(f"**Maximum Predicted Sales:** {max_sales:.2f}")
-st.write(f"**Minimum Predicted Sales:** {min_sales:.2f}") 
+st.write(f"**Minimum Predicted Sales:** {min_sales:.2f}")
+
 st.info(
     "The summary statistics provide a quick overview of the predicted "
     "sales over the next 30 days and help understand the overall demand trend."
 )
 
+st.subheader("Inventory Recommendation")
+
+##Add Recommendation Logic
+if average_sales > 0:
+    st.success("Demand is expected to remain stable. Maintain sufficient inventory to avoid stock shortages.")
+else:
+    st.warning(
+        "Demand is predicted to be low. Review inventory levels before placing new orders."
+    )
+
+##Add a note
+if average_sales > 0:
+    st.success(
+        "Demand is expected to remain stable. Maintain sufficient inventory to avoid stock shortages."
+    )
+else:
+    st.warning("Demand is predicted to be low. Review inventory levels before placing new orders.")
+
+    
 
 
