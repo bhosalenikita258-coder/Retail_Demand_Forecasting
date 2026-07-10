@@ -65,6 +65,9 @@ A user-facing application built to serve interactive forecast visualizations, ch
   - Maximum Predicted Sales
   - Minimum Predicted Sales
 - Informational summary explaining the overall forecasted demand trend.
+- Inventory Recommendation
+- Section that provides inventory management suggestions based on predicted average sales
+- Displays success or warning messages to help users make informed inventory planning decisions
 
 ---
 
