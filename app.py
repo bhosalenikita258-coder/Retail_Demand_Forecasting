@@ -74,6 +74,13 @@ if average_sales > 0:
 else:
     st.warning("Demand is predicted to be low. Review inventory levels before placing new orders.")
 
+##Dataset information 
+st.subheader("Dataset Information")
+
+st.write("**Dataset:** M5 Forecasting Dataset")
+st.write(f"**Forecast Records:** {len(forecast)}")
+st.write("**Forecast Horizon:** 30 Days")
+st.write("**Domain:** Retail Sales Forecasting")
     
 
 
