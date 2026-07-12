@@ -68,12 +68,17 @@ A user-facing application built to serve interactive forecast visualizations, ch
 - Inventory Recommendation
 - Section that provides inventory management suggestions based on predicted average sales
 - Displays success or warning messages to help users make informed inventory planning decisions
-- - Dataset Information section displaying:
+- Dataset Information section displaying:
   - Dataset name
   - Number of forecast records
   - Forecast horizon (30 days)
   - Application domain (Retail Sales Forecasting)
-
+- Model Information section displaying:
+  - Model name (Facebook Prophet)
+  - Algorithm type (Time Series Forecasting)
+  - Model input (Historical Retail Sales Data)
+  - Model output (30-Day Sales Forecast)
+  - Model purpose for demand forecasting, inventory planning, and business decision-making
 ---
 
 ## 📂 Repository Structure
