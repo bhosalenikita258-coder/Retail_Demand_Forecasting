@@ -81,6 +81,14 @@ st.write("**Dataset:** M5 Forecasting Dataset")
 st.write(f"**Forecast Records:** {len(forecast)}")
 st.write("**Forecast Horizon:** 30 Days")
 st.write("**Domain:** Retail Sales Forecasting")
+
+st.subheader("Model Information")
+
+st.write("**Model:** Facebook Prophet")
+st.write("**Algorithm Type:** Time Series Forecasting")
+st.write("**Input:** Historical Retail Sales Data")
+st.write("**Output:** 30-Day Sales Forecast")
+st.write("**Purpose:** Forecast future product demand to support inventory planning and business decision-making.")
     
 
 
