@@ -79,6 +79,7 @@ A user-facing application built to serve interactive forecast visualizations, ch
   - Model input (Historical Retail Sales Data)
   - Model output (30-Day Sales Forecast)
   - Model purpose for demand forecasting, inventory planning, and business decision-making
+  - Added Dashboard Footer
 ---
 
 ## 📂 Repository Structure
