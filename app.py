@@ -88,7 +88,10 @@ st.write("**Model:** Facebook Prophet")
 st.write("**Algorithm Type:** Time Series Forecasting")
 st.write("**Input:** Historical Retail Sales Data")
 st.write("**Output:** 30-Day Sales Forecast")
-st.write("**Purpose:** Forecast future product demand to support inventory planning and business decision-making.")
+st.write("**Purpose:** Forecast future product demand to support inventory planning and business decision-making.") 
+
+st.markdown("---")
+st.caption("Retail Demand Forecasting Dashboard | Developed using Python, Streamlit, and Facebook Prophet")
     
 
 
