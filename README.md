@@ -1,112 +1,151 @@
 # Retail Demand Forecasting
 
-## 📌 Project Overview
-Retail Demand Forecasting is an end-to-end data analysis and machine learning project that leverages historical retail sales records to uncover sales patterns, track product demand variations, identify pricing trends, and analyze the impact of calendar-based special events. 
-
-This repository performs robust **Exploratory Data Analysis (EDA)**, implements **feature engineering** strategies, applies the **Facebook Prophet model** for time-series forecasting, and deploys a live interaction framework via a web application interface.
+##  Project Overview
+Retail Demand Forecasting is an end-to-end data analysis and time-series forecasting project that predicts future retail product demand using historical sales data. The project integrates data preprocessing, exploratory data analysis (EDA), feature engineering, forecasting with Facebook Prophet, and an interactive Streamlit dashboard to support inventory planning and business decision-making.
 
 ---
 
-## 🚀 Objectives
-* **Data Integration:** Load, merge, clean, and preprocess multi-source complex retail datasets.
-* **Exploratory Analysis:** Uncover structural statistics, locate missing values, and handle anomalies.
-* **Pattern Exploration:** Visualize sales trend shifts relative to specific days, months, and regional constraints.
-* **Feature Engineering:** Extract time-aware metadata and calendar-driven indicators to enrich data structures.
-* **Predictive Forecasting:** Build, train, and evaluate a robust predictive model for forecasting future horizons.
-* **Model Deployment:** Implement an interactive user interface to visualize ongoing demand patterns and upcoming forecasts.
+##  Objectives
+- Load, clean, and preprocess historical retail datasets.
+- Perform Exploratory Data Analysis (EDA) to identify sales patterns and trends.
+- Engineer time-based features for forecasting.
+- Build a Facebook Prophet model to forecast future sales.
+- Develop an interactive Streamlit dashboard to visualize forecasts and insights.
+- Support inventory planning through forecast-based recommendations.
 
 ---
 
-## 📊 Dataset Information
-This project utilizes the hierarchical dataset framework from the official [Kaggle M5 Forecasting Accuracy Competition](https://kaggle.com). It includes:
-1. **`calendar.csv`** – Dates and event details (e.g., holidays, sporting events, promotional dates).
-2. **`sales_train_validation.csv`** – Historical daily unit sales records per product and store location.
-3. **`sell_prices.csv`** – Weekly product selling prices organized across target stores and dates.
+##  Dataset Information
+
+This project uses the **M5 Forecasting Accuracy** dataset from Kaggle, which consists of:
+
+1. **calendar.csv** – Calendar information, holidays, and special events.
+2. **sales_train_validation.csv** – Historical daily sales for products across stores.
+3. **sell_prices.csv** – Weekly selling prices for each product.
+
+https://www.kaggle.com/competitions/m5-forecasting-accuracy/data
+---
+
+##  Tech Stack
+
+- **Programming Language:** Python
+- **Data Manipulation:** Pandas, NumPy
+- **Visualization:** Matplotlib
+- **Forecasting Model:** Facebook Prophet
+- **Dashboard:** Streamlit
+- **Development Environment:** Jupyter Notebook
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
-* **Core Language:** Python
-* **Data Manipulation:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn
-* **Time Series Modeling:** Prophet (Facebook Prophet)
-* **Application Framework:** Streamlit (via `app.py`)
+##  Project Workflow
 
----
+### 1. Data Collection
+- Load retail sales, calendar, and selling price datasets.
 
-## ⚙️ Project Pipeline & Key Components
+### 2. Data Preprocessing
+- Handle missing values.
+- Merge datasets.
+- Convert date columns.
+- Prepare data for forecasting.
 
-### 1. Exploratory Data Analysis (EDA)
-Comprehensive inspections conducted within the notebook include:
-* Dataset shape verification, missing values auditing, and deduplication.
-* Analysis of monthly sales volume tracking and weekday traffic splits.
-* Evaluations of event-driven pricing, state-wise product footprints, and category-level demand trends.
+### 3. Exploratory Data Analysis (EDA)
+- Dataset overview
+- Missing value analysis
+- Month distribution
+- Weekday distribution
+- Event type distribution
+- Selling price distribution
+- Products by category
+- Products by state
+- Average selling price by store
+- Average selling price by state
+- Daily sales trend
+- Top-selling products
 
-### 2. Data Transformation & Feature Engineering
-* **Temporal Splits:** Extraction of attributes like `Year`, `Month`, `Day`, `ISO Week`, and `Weekday`.
-* **Data Synthesis:** Integrating the calendar dependencies directly into historical sales matrices.
-* **Aggregations:** Grouping data across year-month targets to map broad structural indicators.
-* **Exporting Cleaned Data:** Outputting formatted structures into `processed_data.csv`.
+### 4. Feature Engineering
+- Create Year, Month, Day, Week, and Weekday features.
+- Prepare data in Prophet format (`ds` and `y`).
 
-### 3. Time Series Forecasting (Prophet Model)
-* Target fields remapped to conform with Prophet specifications (`ds` for timestamp, `y` for sales targets).
-* Execution of the model to predict structural outcomes over a **30-day forecast horizon**.
-* Component breakdown visualizations mapping individual impacts from long-term trends, weekly variations, and annual seasonality.
+### 5. Time Series Forecasting
+- Train the Facebook Prophet model.
+- Generate a 30-day sales forecast.
+- Visualize forecast results.
+- Analyze trend, weekly, and yearly seasonality.
 
-### 4. Interactive Application (`app.py`)
-A user-facing application built to serve interactive forecast visualizations, check confidence intervals (`yhat_lower` / `yhat_upper`), and allow quick assessments of predicted demand spikes.
+### 6. Interactive Application (`app.py`)
 
-- Display of forecast data in tabular format.
+A user-friendly Streamlit dashboard providing:
+
+- Forecast data in tabular format.
 - Interactive 30-day sales forecast visualization.
-- Forecast confidence intervals (`yhat`, `yhat_lower`, and `yhat_upper`).
-- Sales Summary section displaying:
+- Forecast confidence intervals (`yhat`, `yhat_lower`, `yhat_upper`).
+- **Sales Summary** displaying:
   - Total Forecasted Sales
   - Average Predicted Sales
   - Maximum Predicted Sales
   - Minimum Predicted Sales
-- Informational summary explaining the overall forecasted demand trend.
-- Inventory Recommendation
-- Section that provides inventory management suggestions based on predicted average sales
-- Displays success or warning messages to help users make informed inventory planning decisions
-- Dataset Information section displaying:
-  - Dataset name
-  - Number of forecast records
-  - Forecast horizon (30 days)
-  - Application domain (Retail Sales Forecasting)
-- Model Information section displaying:
-  - Model name (Facebook Prophet)
-  - Algorithm type (Time Series Forecasting)
-  - Model input (Historical Retail Sales Data)
-  - Model output (30-Day Sales Forecast)
-  - Model purpose for demand forecasting, inventory planning, and business decision-making
-  - Added Dashboard Footer
+- Information box explaining the overall demand trend.
+- **Inventory Recommendation** section providing inventory planning suggestions based on forecast results.
+- Success or warning messages to support inventory management decisions.
+- **Dataset Information** displaying:
+  - Dataset Name
+  - Forecast Records
+  - Forecast Horizon
+  - Domain
+- **Model Information** displaying:
+  - Model Name (Facebook Prophet)
+  - Algorithm Type
+  - Model Input
+  - Model Output
+  - Model Purpose
+- Dashboard footer showing project information.
+
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
+
 ```text
 Retail_Demand_Forecasting/
-├── Retail_Demand_Forecasting.ipynb   # Main Jupyter notebook containing data processing & training
-├── app.py                            # Streamlit web application deployment script
-├── README.md                         # Project documentation and guide
-├── sales_forecast.csv                # Forecast results generated by the Prophet model
-├── calendar.csv                      # (Data dependency) Date and event tracker
-├── sales_train_validation.csv        # Historical sales data
-└── sell_prices.csv                   # Product pricing logs
+├── Retail_Demand_Forecasting.ipynb
+├── app.py
+├── README.md
+├── sales_forecast.csv
+├── calendar.csv
+├── sales_train_validation.csv
+└── sell_prices.csv
+```
 
 ---
 
-## 💻 How to Get Started
+##  Project Output
 
-### 1. Install Requirements
-Ensure you have the required analytical libraries installed:
+The project provides:
+
+- Cleaned retail dataset
+- Exploratory Data Analysis (EDA)
+- 30-day sales forecast
+- Forecast trend visualization
+- Forecast component analysis
+- Interactive Streamlit dashboard
+- Sales summary statistics
+- Inventory recommendations
+- Dataset information
+- Model information
+
+---
+
+##  How to Run
+
+### Install Required Libraries
+
 ```bash
 pip install pandas numpy matplotlib prophet streamlit
 ```
 
-### 2. Run the Web Application
-Launch the interactive dashboard to see predictions locally:
+### Run the Streamlit Dashboard
+
 ```bash
 streamlit run app.py
 ```
 
-
+---
